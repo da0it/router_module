@@ -1,0 +1,55 @@
+{
+  "billing.payment_question": {
+    "title": "Вопрос по оплате / деньгам",
+    "description": "Любые вопросы, связанные с оплатой, платежами, деньгами",
+    "examples": [
+      "что с деньгами",
+      "как с деньгами обстоит вопрос",
+      "деньги списались",
+      "я внёс деньги",
+      "платёж не прошёл"
+    ],
+    "default_group": "finance_support",
+    "priority": "high",
+    "tags": ["billing", "money"]
+  },
+
+  "access.reset_password": {
+    "title": "Проблемы с доступом",
+    "examples": [
+      "не могу войти",
+      "забыл пароль",
+      "не пускает в систему",
+      "восстановить доступ"
+    ],
+    "default_group": "it_helpdesk",
+    "priority": "normal",
+    "tags": ["access", "auth"]
+  },
+
+  "misc.abuse": {
+    "title": "Оскорбления и агрессия",
+    "examples": [
+      "заткнись",
+      "пидарас",
+      "я тебе башку",
+      "сопляк ёбаный"
+    ],
+    "default_group": "security",
+    "priority": "high",
+    "tags": ["abuse", "security"]
+  },
+
+  "misc.triage": {
+    "title": "Неопределённое обращение",
+    "examples": [
+      "алло",
+      "подскажите пожалуйста",
+      "у меня вопрос",
+      "непонятно"
+    ],
+    "default_group": "helpdesk_triage",
+    "priority": "normal",
+    "tags": ["triage"]
+  }
+}
