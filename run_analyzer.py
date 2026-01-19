@@ -7,6 +7,8 @@ from routing.ai_analyzer import RubertEmbeddingAnalyzer
 def load_intents(path: str) -> Dict[str, Dict]:
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
+    
+allowed_intents = load_intents("configs/intents.json")
 
 # 1. Загружаем JSON
 with open("test_data/test_call.json", "r", encoding="utf-8") as f:
@@ -34,8 +36,6 @@ call = CallInput(
         "note": raw.get("note"),
     },
 )
-    
-allowed_intents = load_intents("configs/intents.json")
 
 # 4. Создаём анализатор
 analyzer = RubertEmbeddingAnalyzer()
